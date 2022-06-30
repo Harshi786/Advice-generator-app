@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Advice generator app</title>
+
+</head>
+<body>
+  <main class="container-fluid">
+    <div class="row min-vh-100 d-flex flex-column justify-content-center align-items-center">
+      <div class="card shadow col-xs-12" >
+        <div class="card-header text-center">
+          <h1 class="sr-only"> Advice Generator App </h1>
+          <h2> ADVICE #<span id="aid"> </span> </h2>
+          <div class="card-body text-center">
+            <div class="advice-effect">
+              <q id="advicetxt" class="text"> 
+                <!-- Advice text goes here -->
+              </q>
+            </div>
+          </div>
+          <div class="card-footnote">
+            <img src="images/pattern-divider-desktop.svg" alt="desktop_divider" class="desktop">
+            <img src="images/pattern-divider-mobile.svg" alt="mobile_divider" class="mobile" >
+           <button id="button" onclick="advicecall()">
+            <img src="images/icon-dice.svg" alt="dice_button">
+           </button> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+   <footer>
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.frontendmentor.io/profile/Harshi786" target="_blank"> Harshita Jain</a>.
+        </div>
+      </footer>
+</body>
+</html>
